@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Example: 2-1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    ul.li{
+        list-style: none;
+    }
+    .pop{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #ddd;
+        display: none;
+    }
+</style>
+<script>
+    $(function () {
+        $('button').on('click',function(){
+            $('.pop').show();
+        })
+        $('.close').on('click',function(){
+            $('.pop').hide();
+        })
+    });
+    
+    $(document).ready(function(){
+       
+    });
+
+</script>
+
+<body>
+<div class="box">
+    <p>1. 오늘은 무슨 요일일까요?</p>
+    <button class="answer">정답보기</button>
+</div>
+<div class="pop">
+    <p>금요일</p>
+    <button class="close">닫기</button>
+</div>
+</body>
+
+</html>

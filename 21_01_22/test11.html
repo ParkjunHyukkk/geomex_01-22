@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Example: 2-1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    ul.li{
+        list-style: none;
+    }
+   
+</style>
+<script>
+    $(function () {
+       var abc = $('.a').val();
+       $('.btn').on('click',function(){
+           var abc = $('.a').val();
+           $('.b').val(abc);
+       })
+    });
+
+</script>
+
+<body>
+<div class="box">
+    <input type="text" class ="a">
+    <input type="text" class ="b">
+    <button class="btn">전송</button>
+</div>
+
+</body>
+
+</html>
