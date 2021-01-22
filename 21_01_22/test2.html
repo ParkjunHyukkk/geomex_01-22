@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Example: 2-1</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    body {
+        background-color: gray;
+    }
+    .wrap{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    header{
+        height: 300px;
+        background-color: red;
+    }
+    section{
+        overflow: hidden;
+    }
+    section > .box {
+        float: left;
+        width: 33.333%;
+        height: 200px;
+    }
+    section > .box:first-child {
+        background-color: orange;
+    }
+    section > .box:nth-child(2) {
+        background-color:black;
+    }
+    section > .box:last-child {
+        background-color:brown;
+    }
+    footer{
+        height: 300px;
+        background-color: darkturquoise;
+    }
+
+    @media (max-width:800px){
+        .wrap{width:100%}
+        section > .box:first-child {width: 50%;}
+        section > .box:nth-child(2) {width: 50%;}
+        section > .box:last-child {width: 50%; clear: both;}
+    }
+</style>
+
+<body>
+<div class="wrap">
+    <header></header>
+    <section>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+    <footer></footer>
+
+
+</div>
+
+</body>
+
+</html>

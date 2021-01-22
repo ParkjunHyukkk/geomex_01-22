@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Example: 2-1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    ul.li{
+        list-style: none;
+    }
+    .list1 li{
+        width: 200px;
+        height: 50px;
+        border:  1px solid #000;
+        text-align: center;
+        line-height: 50px;
+    }
+    .list1 li.on{
+        background-color: orange;
+    }
+</style>
+<script>
+    $(function () {
+        $('.list1 li').on('click',function(){
+            $(this).addClass('on').siblings().removeClass('on');
+
+        })
+        
+
+
+
+    });
+    $(document).ready(function(){
+        $('.list2').children('.a').next().css('color','red')
+        $('.list2').children('.a').prev().css('color','red')
+
+    });
+
+</script>
+
+<body>
+<div class="box">
+    <ul class="list1">
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+    </ul>
+</div>
+</body>
+
+</html>

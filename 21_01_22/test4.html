@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Example: 2-1</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: greenyellow;
+    }
+
+    .login_box {
+        width: 700px;
+        height: 410px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .login_box .left {
+        width: 290px;
+        height: 100%;
+        background-color: orange;
+        float: left;
+        box-sizing: border-box;
+        padding: 130px 20px 0 20px;
+
+    }
+
+    .login_box .right {
+        float: right;
+        width: 410px;
+        height: 100px;
+        box-sizing: border-box;
+        padding: 70px 40px;
+    }
+
+    .login_box .right .input_box {
+        width: 280px;
+        height: 45px;
+        background-color: #f5f5f5;
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
+
+    .login_box .right .input_box input {
+        border: 0;
+        background-color: transparent;
+        padding: 15px 0;
+    }
+
+    .login_box .right .btn_box {
+        overflow: auto;
+    }
+
+    .login_box .right .btn_box .checkbox {
+        display: inline-block;
+
+    }
+
+    .login_box .right .btn_box .btn_login {
+        width: 115px;
+        height: 40px;
+        border-radius: 3px;
+        background-color: #005c95;
+        color: #fff;
+        float: right;
+    }
+
+    .claerfix:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    @media (max-width: 700px) {
+        .login_box {
+            width: 100%;
+            height: 100%;
+        }
+
+        .login_box .left {
+            width: 100%;
+            height: 150px;
+            float: none;
+            padding: 15px 0 0 0;
+            text-align: center;
+        }
+
+        .login_box .right {
+            width: 100%;
+            float: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="login_wrap">
+        <div class="login_box claerfix">
+            <div class="left">
+                <h1>지원사업 통합관리 시스템</h1>
+                <p>연초경작인의 든든한 동반자<br /> 연초생산안정화 재단입니다.</p>
+            </div>
+            <div class="right">
+                <div class="login_right">
+                    <h2 class="title">LOGIN</h2>
+                    <div class="input_box">
+                        <input type="text" placeholder="아이디를 입력해주세요.">
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="비밀번호를 입력해주세요.">
+                    </div>
+                    <div class="btn_box">
+                        <div class="checkbox">
+                            <input type="checkbox" id="check">
+                            <label for="check">아이디 저장</label>
+                        </div>
+                        <button class="btn_login">로그인</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

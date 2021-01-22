@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Example: 2-1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    ul.li{
+        list-style: none;
+    }
+    .abc{
+        display: none;
+    }
+</style>
+<script>
+    $(function () {
+        $('button').on('click',function(){
+            $('.abc').show();
+        })
+
+    });
+    $(document).ready(function(){
+       
+    });
+
+</script>
+
+<body>
+<div class="box">
+    <p>1. 오늘은 무슨 요일일까요?</p>
+    <p class="abc">금요일</p>
+    <button>정답보기</button>
+</div>
+</body>
+
+</html>
